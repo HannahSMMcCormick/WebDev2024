@@ -1,10 +1,28 @@
-.navigation{
+.Map {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+}
 
+.Map iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.navigation{
     background-color:#06675e;
     color: #fff;
     padding: 25px 0;
-
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 999;
+    position:fixed;
 }
+
 
 .navigation ul{
     position: fixed;
@@ -25,6 +43,7 @@
 }
 
 .navigation ul li a{
+ 
     text-decoration: none;
     color: #fff;
     display: block;
@@ -41,8 +60,48 @@
 }
 
 .banner{
+    position: relative;
     text-align: center;
     background-color:#ffc228;
     color: #06675e;
     padding: 25px 0;
+    margin-top: 25px;
+}
+
+.SubBanner{
+    text-align: center;
+    background-color:#ffc228;
+    color: #06675e;
+    padding: 15px 0;
+    margin: 10px 0 0 0;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto 50px;
+    padding: 1rem;
+    border: solid 1px #06675e;
+    border-radius: 0.5rem;
+    background-color: #ffc228;
+
+}
+
+.footer{
+    background-color: #06675e;
+    color: #fff;
+    width:100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.info{
+
+    text-align: center;
+
 }
