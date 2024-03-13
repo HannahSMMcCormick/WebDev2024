@@ -105,3 +105,11 @@
     text-align: center;
 
 }
+
+
+/*not working?*/
+.container h2{
+
+    text-align: left !important;
+
+}
