@@ -1,3 +1,15 @@
+body{
+
+    background-image: url(glasgowAtNight.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
 .Map {
     position: relative;
     width: 100%;
@@ -126,6 +138,11 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: white;
+    border: 1px solid #06675e;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .content>img {
@@ -149,4 +166,33 @@ img {
     order: -1;
     margin-right: 20px;
 
+}
+
+.card{
+
+    background-color: white;
+    border: 1px solid #06675e;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h2{
+
+color:black;
+font-size: 1.5em;
+margin-top: 0;
+}
+
+.card p {
+    color: #666;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card ul li {
+    list-style-type: disc;
+    margin-bottom: 5px;
 }
