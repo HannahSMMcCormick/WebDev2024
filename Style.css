@@ -210,7 +210,17 @@ margin-top: 0;
     padding-left: 20px;
 }
 
+.card ul img{
+    aspect-ratio: 3 / 2;
+    
+}
+
+
 .card ul li {
     list-style-type: disc;
     margin-bottom: 5px;
 }
+
+hr.solid {
+    border-top: 3px solid #bbb;
+  }
