@@ -1,49 +1,39 @@
+
+/*All pages*/
+
+/*Body Styles*/
 body{
 
-    background-image: url(glasgowAtNight.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
+    background-image: url(glasgowAtNight.jpg); /* Background image */
+    background-position: center center; /* Position of background image */
+    background-repeat: no-repeat; /*One image only*/
+    background-attachment: fixed; /*Image does not move,fixed*/
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-size: cover; /* Cover entire background with image */
 }
 
-.Map {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-}
-
-.Map iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-
+/*Nav Bar*/
 .navigation {
-    background-color: #06675e;
-    color: #fff;
+    background-color: #06675e; /* Background color */
+    color: #fff; /* Text color */
     padding: 25px 0;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 999;
-    position: fixed;
+    width: 100%; /* Take full width */
+    z-index: 999; /* Stay above other elements */
+    position: fixed; /* Fixed position */
 }
 
 
 .navigation ul {
-    position: fixed;
+    position: fixed;  /* Fixed position */
     top: 0;
     left: 0;
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
+    width: 100%; /* Take full width */
+    list-style-type: none; /* Remove default list styles */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-around;/* Evenly distribute items */
     padding: 0;
     margin: 0;
 }
@@ -56,44 +46,76 @@ body{
 
 .navigation ul li a {
 
-    text-decoration: none;
-    color: #fff;
-    display: block;
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Text color */
+    display: block; /* Display as block element */
     padding: 10px 0;
     text-align: center;
-    transition: padding 0.3s, background-color 0.3s;
+    transition: padding 0.3s, background-color 0.3s; /* Transition effect */
 }
 
 .navigation ul li a:hover {
 
-    background-color: #ffc228;
-    padding: 15px 0;
+    background-color: #ffc228; /* Background color on hover */
+    padding: 15px 0; /* Increase padding on hover */
+
 
 }
 
+
+/*Banner*/
 .banner {
-    position: relative;
+    position: relative; /* Relative positioning */
     text-align: center;
-    background-color: #ffc228;
+    background-color: #ffc228;/* Background color */
     color: black;
     padding: 25px 0;
     margin-top: 25px;
 }
 
-.SubBanner {
+/*Quote thingy in banner*/
+.info {
+
     text-align: center;
-    background-color: #ffc228;
-    color: #06675e;
-    padding: 15px 0;
-    margin: 10px 0 0 0;
+
 }
+
+/*Footer*/
+.footer {
+    background-color: #06675e;/* Background color */
+    color: #fff; /* Text color */
+    width: 100%;  /* Take full width */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*Index Page*/
+
+/* Map styles */
+.Map {
+    position: relative;  /* Relative positioning */
+    /*Size*/
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+/* Map iframe styles */
+.Map iframe {
+    position: absolute; /* Absolute positioning */
+    /*full size*/
+    width: 100%;
+    height: 100%;
+}
+
+/* Index/History page*/
 
 .container {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center;  /* Center items vertically */
     width: 80%;
     max-width: 600px;
     margin: 50px auto 50px;
@@ -104,21 +126,6 @@ body{
 
 }
 
-.footer {
-    background-color: #06675e;
-    color: #fff;
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.info {
-
-    text-align: center;
-
-}
-
-
 /*not working for h2's on index page?*/
 .container h2 {
 
@@ -126,17 +133,9 @@ body{
     padding: 0;
 }
 
-img {
-
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0
-}
-
 .content {
-    display: flex;
-    flex-direction: row;
+    display: flex; /* Use flexbox layout */
+    flex-direction: row; /* Arrange items horizontally */
     align-items: center;
     background-color: white;
     border: 1px solid #06675e;
@@ -145,11 +144,13 @@ img {
     margin-bottom: 20px;
 }
 
-.content>img {
+/*History page*/
+
+content>img {
     margin-right: 20px;
     max-width: 50%;
-    flex-shrink: 0;
-    /* Prevent image from shrinking */
+    flex-shrink: 0; /* Prevent image from shrinking */
+
 }
 
 /*Stupid pictures won't allign properly*/
@@ -167,6 +168,19 @@ img {
     margin-right: 20px;
 
 }
+
+/*history/visit page*/
+
+/*Images*/
+img {
+
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0
+}
+
+/*visit page*/
 
 .card{
 
