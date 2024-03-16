@@ -12,4 +12,8 @@ Regular commits with descriptive messages were made throughout the development p
 
 I  had an issue with css for the images in the history page which was supposed to have the images in the containers be in alternating allignment.
 
+For some reason map on home page when first opening will be zoomed out, will zoom into glasgow soon or if you click to another page then back.
+
+Not fan of my image formating : (
+
 Hannah McCormick 52209069
